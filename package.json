@@ -1,0 +1,25 @@
+{
+  "name": "EatDaBurger",
+  "version": "1.0.0",
+  "description": "A burger logger created with MySQL, Node, Express, and Handlebars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veryfaye/EatDaBurger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veryfaye/EatDaBurger/issues"
+  },
+  "homepage": "https://github.com/veryfaye/EatDaBurger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  }
+}
