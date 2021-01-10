@@ -5,14 +5,14 @@
 <ul>
   {{#each burger}}
   {{#unless devoured}}
-    <li>
-      <p>
-        {{this.id}}. {{this.burger_name}}
+  <li>
+    <p>
+      {{this.id}}. {{this.burger_name}}
 
-        <button data-burgerid="{{this.id}}" class="devourBurger">Devour It!</button>
-      </p>
-    </li>
-    {{/unless}}
+      <button data-id="{{id}}" data-newdevour=1 class="devourBurger">Devour It!</button>
+    </p>
+  </li>
+  {{/unless}}
   {{/each}}
 </ul>
 
@@ -21,20 +21,27 @@
 <ul>
   {{#each burger}}
   {{#if devoured}}
-    <li>
-      <p>
-        {{this.id}}. {{this.burger_name}}
+  <li>
+    <p>
+      {{this.id}}. {{this.burger_name}}
 
-        <button data-burgerid="{{this.id}}" class="devourBurger">Devour It!</button>
-      </p>
-    </li>
-    {{/if}}
+    </p>
+  </li>
+  {{/if}}
   {{/each}}
 </ul>
 
 <h2>Add a Burger to Devour</h2>
-<form id="addBurger" class="button-size">
-	<textarea type="text" name="movie"></textarea>
-	<button type="submit">Add the Burger!</button>
-</form>
+{{!-- <form id="addBurger" class="button-size">
+  <textarea type="text" name="burger" id="addBurgerName"></textarea>
+  <button type="submit">Add the Burger!</button>
+</form> --}}
 
+<form class="create-form">
+
+
+  <textarea id="ca" name="name"></textarea></br>
+
+
+  <button type="submit">Add the Burger!</button>
+</form>
