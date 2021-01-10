@@ -1,7 +1,10 @@
-<h1>Movies To Watch</h1>
+<h1>Burgers!</h1>
+
+<h2>Burgers to Eat!</h2>
 
 <ul>
   {{#each burger}}
+  {{#unless devoured}}
     <li>
       <p>
         {{this.id}}. {{this.burger_name}}
@@ -9,6 +12,23 @@
         <button data-burgerid="{{this.id}}" class="devourBurger">Devour It!</button>
       </p>
     </li>
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Burgers Eaten!</h2>
+
+<ul>
+  {{#each burger}}
+  {{#if devoured}}
+    <li>
+      <p>
+        {{this.id}}. {{this.burger_name}}
+
+        <button data-burgerid="{{this.id}}" class="devourBurger">Devour It!</button>
+      </p>
+    </li>
+    {{/if}}
   {{/each}}
 </ul>
 
