@@ -27,7 +27,7 @@ To use this application:
 ![Deployed Application](DeployedEatDaBurger.png)
 
 ## Questions
-To get in contact with me please see my Github [here](https.github.com/undefined), or [email me](mailto:undefined)!
+To get in contact with me please see my Github [here](https.github.com/veryfaye), or [email me](mailto:amanda1@mnlemoines.com)!
 
 ## License
 Copyright 2021 Amanda LeMoine
